@@ -1,0 +1,12 @@
+# Ignore Drupal-specific files
+/web/sites/default/settings.local.php
+/web/sites/default/files
+/vendor
+/node_modules
+
+# Ignore OS-specific files
+.DS_Store
+.idea
+
+# Ignore DDEV-specific files
+.ddev
