@@ -1,0 +1,18 @@
+{
+  "name": "bid_theme",
+  "version": "1.0.0",
+  "description": "[Bootstrap 5](https://www.drupal.org/project/bootstrap5) subtheme.",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass scss/style.scss css/style.css --style compressed",
+    "watch": "sass --watch scss/style.scss css/style.css",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "bootstrap": "^5.3.3",
+    "sass": "^1.85.1"
+  }
+}
