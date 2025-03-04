@@ -20,10 +20,12 @@
         "drupal/core-project-message": "^11.1",
         "drupal/core-recommended": "^11.1",
         "drupal/entity_browser": "^2.13",
+        "drupal/entity_reference_revisions": "^1.12",
         "drupal/geofield": "^1.64",
         "drupal/geolocation": "^3.14",
         "drupal/image_widget_crop": "^3.0",
         "drupal/leaflet": "^10.2",
+        "drupal/paragraphs": "^1.19",
         "drupal/radix": "^6.0",
         "drush/drush": "^13.3"
     },
