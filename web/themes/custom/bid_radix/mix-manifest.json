@@ -1,4 +1,9 @@
 {
     "/build/js/main.script.js": "/build/js/main.script.js",
-    "/build/css/main.style.css": "/build/css/main.style.css"
+    "/components/page-navigation/page-navigation.css": "/components/page-navigation/page-navigation.css",
+    "/components/page-footer/page-footer.css": "/components/page-footer/page-footer.css",
+    "/components/page-content/page-content.css": "/components/page-content/page-content.css",
+    "/components/hero/hero.css": "/components/hero/hero.css",
+    "/build/css/main.style.css": "/build/css/main.style.css",
+    "/components/page/page.css": "/components/page/page.css"
 }

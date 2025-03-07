@@ -1,0 +1,20 @@
+<div class="hero">
+    {% if content.field_image|render %}
+      <div class="hero__image">
+        {{ content.field_image }}
+      </div>
+    {% endif %}
+    <div class="hero__content">
+      {% if content.field_title|render %}
+        <h1 class="hero__title">{{ content.field_title }}</h1>
+      {% endif %}
+      {% if content.field_subtitle|render %}
+        <p class="hero__subtitle">{{ content.field_subtitle }}</p>
+      {% endif %}
+      {% if content.field_button|render %}
+        <div class="hero__link">
+          {{ content.field_button }}
+        </div>
+      {% endif %}
+    </div>
+  </div>
