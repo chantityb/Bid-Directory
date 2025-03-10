@@ -18,14 +18,15 @@
 
 
   {% block page_content %}
-    {% include 'radix:page-content' with {
+    {% include 'bid_radix:page-content' with {
       page_main_utility_classes: ['py-5'],
       page_header_container_utility_classes: ['mb-3'],
+      page_content_container_type: 'false',
     }%}
   {% endblock %}
 
 	{% block page_footer %}
-		{% include 'radix:page-footer' %}
+		{% include 'bid_radix:page-footer' %}
 	{% endblock %}
 </div>
 
