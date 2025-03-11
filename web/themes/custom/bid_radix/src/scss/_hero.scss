@@ -1,0 +1,93 @@
+$mobile-height: 400px;
+$tablet-height: 500px;
+$desktop-height: 1080px;
+
+$tablet-breakpoint: 768px;
+$desktop-breakpoint: 1024px;
+
+// Hero Section Styles
+.hero-section-large {
+    height: $mobile-height; // Default height for mobile
+    overflow: hidden; // Ensure nothing overflows
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white; // Default text color
+    background-color: blue; // Test background color
+
+    // Semi-transparent overlay
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); // Semi-transparent black overlay
+        z-index: 1; // Ensure the overlay is above the background color but below the content
+    }
+
+    // Background image styles
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; // Ensure the image covers the section
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 0; // Ensure the image is below the overlay
+    }
+
+    // Tablet styles
+    @media (min-width: $tablet-breakpoint) {
+        height: $tablet-height;
+    }
+
+    // Desktop styles
+    @media (min-width: $desktop-breakpoint) {
+        height: $desktop-height; // Set height to 1080px on desktop
+    }
+
+     // Layout Builder-specific styles
+     .layout-builder-block {
+        color: #333; // Dark text color for better visibility
+        padding: 1rem; // Add padding for better spacing
+
+        .hero-title,
+        .hero-subtext {
+            color: #333 !important; // Ensure text is visible in Layout Builder
+        }
+    }
+}
+
+// Hero Content Styles
+.hero-content {
+    position: relative;
+    z-index: 2; // Ensure content is above the overlay and image
+
+    .hero-title {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero-subtext {
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .btn-primary {
+        font-size: 1rem;
+        padding: 0.75rem 1.5rem;
+        background-color: $primary; // Example button color
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: darken($primary, 10%); // Darker on hover
+        }
+    }
+}
