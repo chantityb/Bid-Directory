@@ -7,6 +7,16 @@ style:
   dependencies:
     - core/drupal
 
+fontawesome:
+  css:
+    theme:
+      libraries/fontawesome/css/all.min.css: {}  # Correct path to the CSS file
+  js:
+    theme:
+      libraries/fontawesome/js/all.min.js: {}    # Correct path to the JS file
+  dependencies:
+    - core/jquery
+
 drupal.ajax:
   js:
     src/js/overrides/ajax.js: {}
@@ -59,3 +69,4 @@ jquery.validate:
     src/js/overrides/validate.js: {}
   dependencies:
     - core/jquery
+

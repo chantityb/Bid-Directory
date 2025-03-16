@@ -19,6 +19,7 @@ regions:
   footer: Footer
 libraries:
   - bid_radix/style
+  - bid_radix/fontawesome
 ckeditor5-stylesheets:
   - build/css/main.style.css
 libraries-extend:

@@ -11,11 +11,14 @@ $desktop-breakpoint: 1024px;
     overflow: hidden; // Ensure nothing overflows
     position: relative;
     display: flex;
+    flex-direction: column; // Stack children vertically
     align-items: center;
     justify-content: center;
     text-align: center;
     color: white; // Default text color
+    margin-top: -64px;
     background-color: blue; // Test background color
+
 
     // Semi-transparent overlay
     &::before {
@@ -75,6 +78,7 @@ $desktop-breakpoint: 1024px;
     .hero-subtext {
         font-size: 1.2rem;
         margin-bottom: 1.5rem;
+        margin-top: 1.5rem;
     }
 
     .btn-primary {

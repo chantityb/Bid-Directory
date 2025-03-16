@@ -1,11 +1,11 @@
 {
     "/build/js/main.script.js": "/build/js/main.script.js",
+    "/build/css/main.style.css": "/build/css/main.style.css",
     "/components/page-footer/page-footer.css": "/components/page-footer/page-footer.css",
     "/components/page-content/page-content.css": "/components/page-content/page-content.css",
     "/components/navbar/navbar.css": "/components/navbar/navbar.css",
     "/components/hero/hero.css": "/components/hero/hero.css",
     "/components/professional-card/professional-card.css": "/components/professional-card/professional-card.css",
     "/components/page/page.css": "/components/page/page.css",
-    "/components/page-navigation/page-navigation.css": "/components/page-navigation/page-navigation.css",
-    "/build/css/main.style.css": "/build/css/main.style.css"
+    "/components/page-navigation/page-navigation.css": "/components/page-navigation/page-navigation.css"
 }

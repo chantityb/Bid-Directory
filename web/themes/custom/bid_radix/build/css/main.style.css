@@ -12656,10 +12656,12 @@ textarea.form-control-lg {
   overflow: hidden;
   position: relative;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
   color: white;
+  margin-top: -64px;
   background-color: blue;
 }
 .hero-section-large::before {
@@ -12712,6 +12714,7 @@ textarea.form-control-lg {
 .hero-content .hero-subtext {
   font-size: 1.2rem;
   margin-bottom: 1.5rem;
+  margin-top: 1.5rem;
 }
 .hero-content .btn-primary {
   font-size: 1rem;
@@ -12724,6 +12727,40 @@ textarea.form-control-lg {
 }
 .hero-content .btn-primary:hover {
   background-color: rgb(130, 98.3977900552, 0);
+}
+
+.professional-details .profile-image-wrapper {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  margin-bottom: 20px img;
+  margin-bottom-width: 100%;
+  margin-bottom-height: 100%;
+  margin-bottom-object-fit: cover;
+}
+.professional-details .additional-details {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.professional-details .additional-details h3, .professional-details .additional-details .h3 {
+  color: #333;
+}
+.professional-details .additional-details .btn-outline-primary {
+  border-color: #2AA198;
+  color: #2AA198;
+}
+.professional-details .additional-details .btn-outline-primary:hover {
+  background-color: #2AA198;
+  color: #fff;
+}
+.professional-details .social-media-links a {
+  transition: opacity 0.3s ease;
+}
+.professional-details .social-media-links a:hover {
+  opacity: 0.7;
 }
 
 /*# sourceMappingURL=main.style.css.map*/

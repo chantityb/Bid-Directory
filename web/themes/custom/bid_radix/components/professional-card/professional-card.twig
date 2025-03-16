@@ -21,21 +21,21 @@
 					<div
 						class="shadow d-flex justify-content-center align-items-center p-3 bg-dark rounded-lg flex-column"
 					>
-						<div class="person-img">
+						<div class="person-img rounded">
 							<img
-								src="{{ file_url('public://pictures/pic1.jpg') }}"
-                                {# src="https://bid-site.ddev.site/sites/default/files/pictures/pic1.jpg" #}
-								alt="img 1"
-								class="img-fluid rounded-circle"
+								src="{{ file_url(content.field_image['#items'].0.entity.uri.value) }}"
+                                {# src="https://bid-site.ddev.site/sites/default/files/pictures/default-image.jpg" #}
+								alt="{{ content.field_image['#items'].0.alt }}"
+								class="rounded-circle img-fluid"
 							/>
 						</div>
 						<div class="person-name my-2">
-							<h3 class="text-white">Person 1</h3>
+							<h3 class="text-white">{{ label }}</h3>
 						</div>
 						<div class="info">
-							<h6 class="text-white">Web developer</h6>
+							<h6 class="text-white">{{ content.field_role_title }}</h6>
 						</div>
-						<div class="social-icons">
+						{# <div class="social-icons">
 							<a href="#" class="text-white"
 								><i class="fa fa-facebook p-2" aria-hidden="true"> </i>
 							</a>
@@ -45,10 +45,55 @@
 							<a href="#" class="text-white"
 								><i class="fa fa-instagram p-2" aria-hidden="true"> </i>
 							</a>
-						</div>
+						</div> #}
 					</div>
 				</div>
 				<!-- End of Professional Card -->
-        
+
+                {# {% if content.field_image['#items'] is not empty %}
+                    <div class="profile-image-wrapper">
+                        <img 
+                          src="{{ file_url(content.field_image['#items'].0.entity.uri.value) }}" 
+                          alt="{{ content.field_image['#items'].0.alt }}" 
+                          class="rounded-circle img-fluid"
+                        >
+                      </div>
+                      {% else %}
+                        <div class="profile-image-wrapper">
+                          <img 
+                            src="{{ file_url('public://pictures/default-image.jpg') }}" 
+                            alt="Default profile image" 
+                            class="rounded-circle img-fluid"
+                          >
+                        </div>
+                      {% endif %}
+         #}
         
 </div>
+
+
+
+{# <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+    <div class="card h-100 shadow-lg border-0 bg-dark text-white rounded-3 overflow-hidden"> #}
+      {# Card Image #}
+      {# <div class="person-img p-3 d-flex justify-content-center align-items-center">
+        <img
+          src="{{ file_url(content.field_image['#items'].0.entity.uri.value) }}"
+          alt="{{ content.field_image['#items'].0.alt }}"
+          class="rounded-circle img-fluid"
+          style="width: 150px; height: 150px; object-fit: cover;"
+        />
+      </div>
+   #}
+      {# Card Body #}
+      {# <div class="card-body text-center">
+        <h3 class="card-title text-white mb-2">{{ label }}</h3>
+        <h6 class="card-subtitle text-muted mb-3">{{ content.field_role_title }}</h6>
+      </div> #}
+  
+      {# Optional: Add a hover effect #}
+      {# <div class="card-footer bg-transparent border-0">
+        <a href="#" class="btn btn-outline-light btn-sm">View Profile</a>
+      </div>
+    </div>
+  </div> #}

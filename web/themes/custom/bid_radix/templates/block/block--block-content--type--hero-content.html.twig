@@ -8,33 +8,6 @@
     ]
 %}
 
-{# <div{{ attributes.addClass(classes) }}> #}
-{# {{ title_prefix }}
-{% if label %}
-    <h2{{ title_attributes }}>{{ label }}</h2>
-{% endif %}
-{{ title_suffix }} #}
-
-{# Hero Banner Title (Layout Builder) #}
-{# {% if content.field_hero_title.value %}
-  <h1 class="hero-title"{{ content.field_hero_title }}</h1>
-{% endif %} #}
-  
-{# Hero Banner Subtext (Layout Builder) #}
-{# {% if content.field_hero_subtext.value %}
-    <p class="hero-subtext">{{ content.field_hero_subtext }}</p>
-{% endif %} #}
-
-  {# Hero Banner Button (Layout Builder) #}
-{# {% if content.field_button_link.url.value %}
-    <a href ="{{ content.field_button_link.0['#url'] }}" class="btn btn-primary">
-        {{ content.field_button_link.0['#title'] }}
-    </a>
-{% endif %} #}
-
-{# </div> #}
-
-
 <div{{ attributes.addClass(classes) }}>
     {{ title_prefix }}
     {% if label %}
@@ -48,8 +21,8 @@
     {% endif %}
 
     {# Hero Banner Subtext (Layout Builder) #}
-    {% if content.field_hero_subtext %}
-        <p class="hero-subtext">{{ content.field_hero_subtext }}</p>
+    {% if content.field_hero_sub_text %}
+        <p class="hero-subtext">{{ content.field_hero_sub_text }}</p>
     {% endif %}
 
     {# Hero Banner Button (Layout Builder) #}
@@ -59,11 +32,16 @@
         </a>
     {% endif %}
 
-    {# Render the rest of the content (required for Layout Builder) #}
-    {{ content|without('field_hero_title', 'field_hero_subtext', 'field_button_link') }}
+    {# Render the rest of the content (required when using Layout Builder) #}
+    {{ content|without('field_hero_title', 'field_hero_sub_text', 'field_button_link') }}
 </div>
 
 
 
+{# <div{{ attributes.addClass(classes) }}>
+    {{ content.field_hero_title }}
+    {{ content.field_hero_sub_text }}
+    {{ content.field_button_link }}
+</div> #}
+
   {# {{ dump(content) }} #}
-  
