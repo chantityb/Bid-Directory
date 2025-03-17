@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css2?family=REM:ital,wght@0,100..900;1,100..900&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap);
 @charset "UTF-8";
 /**
@@ -12737,6 +12738,13 @@ textarea.form-control-lg {
   margin-bottom-width: 100%;
   margin-bottom-height: 100%;
   margin-bottom-object-fit: cover;
+}
+.professional-details h2, .professional-details .h2 {
+  font-family: "REM", sans-serif;
+  font-weight: 200;
+}
+.professional-details .field--name-field-role-title {
+  font-size: 1.375rem;
 }
 .professional-details .additional-details {
   margin-top: 20px;
