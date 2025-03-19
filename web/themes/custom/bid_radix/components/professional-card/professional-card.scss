@@ -1,26 +1,26 @@
 @import "../../src/scss/init";
 
 
-// .card {
-//     transition: transform 0.3s ease, box-shadow 0.3s ease;
+.card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   
-//     &:hover {
-//       transform: translateY(-5px); // Lift the card on hover
-//       box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); // Add a stronger shadow on hover
-//     }
+    &:hover {
+      transform: translateY(-5px); // Lift the card on hover
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); // Add a stronger shadow on hover
+    }
   
-//     .person-img {
-//       background-color: rgba(255, 255, 255, 0.1); // Subtle background for the image
-//       border-radius: 50%; // Ensure the image container is round
-//       padding: 1rem; // Add padding around the image
-//     }
+    .person-img {
+      background-color: rgba(255, 255, 255, 0.1); // Subtle background for the image
+      border-radius: 50%; // Ensure the image container is round
+      padding: 1rem; // Add padding around the image
+    }
   
-//     .btn-outline-light {
-//       transition: background-color 0.3s ease, color 0.3s ease;
+    .btn-outline-light {
+      transition: background-color 0.3s ease, color 0.3s ease;
   
-//       &:hover {
-//         background-color: rgba(255, 255, 255, 0.1); // Light background on hover
-//         color: #fff; // Ensure text remains white
-//       }
-//     }
-//   }
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.1); // Light background on hover
+        color: #fff; // Ensure text remains white
+      }
+    }
+  }

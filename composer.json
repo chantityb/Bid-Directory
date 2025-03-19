@@ -29,6 +29,7 @@
         "drupal/image_widget_crop": "^3.0",
         "drupal/leaflet": "^10.2",
         "drupal/paragraphs": "^1.19",
+        "drupal/pathauto": "^1.13",
         "drupal/radix": "^6.0",
         "drupal/rules": "^4.0",
         "drupal/search_api": "^1.38",

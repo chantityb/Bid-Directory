@@ -92,6 +92,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./components/views-view--grid/views-view--grid.scss":
+/*!***********************************************************!*\
+  !*** ./components/views-view--grid/views-view--grid.scss ***!
+  \***********************************************************/
+/***/ (function(__unused_webpack_module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
 /***/ "./node_modules/@popperjs/core/lib/createPopper.js":
 /*!*********************************************************!*\
   !*** ./node_modules/@popperjs/core/lib/createPopper.js ***!
@@ -8487,6 +8500,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 			"components/page-content/page-content": 0,
 /******/ 			"components/navbar/navbar": 0,
 /******/ 			"components/hero/hero": 0,
+/******/ 			"components/views-view--grid/views-view--grid": 0,
 /******/ 			"components/professional-card/professional-card": 0,
 /******/ 			"components/page/page": 0,
 /******/ 			"components/page-navigation/page-navigation": 0
@@ -8541,15 +8555,16 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	__webpack_require__.O(undefined, ["build/css/main.style","components/page-footer/page-footer","components/page-content/page-content","components/navbar/navbar","components/hero/hero","components/professional-card/professional-card","components/page/page","components/page-navigation/page-navigation"], function() { return __webpack_require__("./src/js/main.script.js"); })
-/******/ 	__webpack_require__.O(undefined, ["build/css/main.style","components/page-footer/page-footer","components/page-content/page-content","components/navbar/navbar","components/hero/hero","components/professional-card/professional-card","components/page/page","components/page-navigation/page-navigation"], function() { return __webpack_require__("./src/scss/main.style.scss"); })
-/******/ 	__webpack_require__.O(undefined, ["build/css/main.style","components/page-footer/page-footer","components/page-content/page-content","components/navbar/navbar","components/hero/hero","components/professional-card/professional-card","components/page/page","components/page-navigation/page-navigation"], function() { return __webpack_require__("./components/hero/hero.scss"); })
-/******/ 	__webpack_require__.O(undefined, ["build/css/main.style","components/page-footer/page-footer","components/page-content/page-content","components/navbar/navbar","components/hero/hero","components/professional-card/professional-card","components/page/page","components/page-navigation/page-navigation"], function() { return __webpack_require__("./components/navbar/navbar.scss"); })
-/******/ 	__webpack_require__.O(undefined, ["build/css/main.style","components/page-footer/page-footer","components/page-content/page-content","components/navbar/navbar","components/hero/hero","components/professional-card/professional-card","components/page/page","components/page-navigation/page-navigation"], function() { return __webpack_require__("./components/page-content/page-content.scss"); })
-/******/ 	__webpack_require__.O(undefined, ["build/css/main.style","components/page-footer/page-footer","components/page-content/page-content","components/navbar/navbar","components/hero/hero","components/professional-card/professional-card","components/page/page","components/page-navigation/page-navigation"], function() { return __webpack_require__("./components/page-footer/page-footer.scss"); })
-/******/ 	__webpack_require__.O(undefined, ["build/css/main.style","components/page-footer/page-footer","components/page-content/page-content","components/navbar/navbar","components/hero/hero","components/professional-card/professional-card","components/page/page","components/page-navigation/page-navigation"], function() { return __webpack_require__("./components/page-navigation/page-navigation.scss"); })
-/******/ 	__webpack_require__.O(undefined, ["build/css/main.style","components/page-footer/page-footer","components/page-content/page-content","components/navbar/navbar","components/hero/hero","components/professional-card/professional-card","components/page/page","components/page-navigation/page-navigation"], function() { return __webpack_require__("./components/page/page.scss"); })
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["build/css/main.style","components/page-footer/page-footer","components/page-content/page-content","components/navbar/navbar","components/hero/hero","components/professional-card/professional-card","components/page/page","components/page-navigation/page-navigation"], function() { return __webpack_require__("./components/professional-card/professional-card.scss"); })
+/******/ 	__webpack_require__.O(undefined, ["build/css/main.style","components/page-footer/page-footer","components/page-content/page-content","components/navbar/navbar","components/hero/hero","components/views-view--grid/views-view--grid","components/professional-card/professional-card","components/page/page","components/page-navigation/page-navigation"], function() { return __webpack_require__("./src/js/main.script.js"); })
+/******/ 	__webpack_require__.O(undefined, ["build/css/main.style","components/page-footer/page-footer","components/page-content/page-content","components/navbar/navbar","components/hero/hero","components/views-view--grid/views-view--grid","components/professional-card/professional-card","components/page/page","components/page-navigation/page-navigation"], function() { return __webpack_require__("./src/scss/main.style.scss"); })
+/******/ 	__webpack_require__.O(undefined, ["build/css/main.style","components/page-footer/page-footer","components/page-content/page-content","components/navbar/navbar","components/hero/hero","components/views-view--grid/views-view--grid","components/professional-card/professional-card","components/page/page","components/page-navigation/page-navigation"], function() { return __webpack_require__("./components/hero/hero.scss"); })
+/******/ 	__webpack_require__.O(undefined, ["build/css/main.style","components/page-footer/page-footer","components/page-content/page-content","components/navbar/navbar","components/hero/hero","components/views-view--grid/views-view--grid","components/professional-card/professional-card","components/page/page","components/page-navigation/page-navigation"], function() { return __webpack_require__("./components/navbar/navbar.scss"); })
+/******/ 	__webpack_require__.O(undefined, ["build/css/main.style","components/page-footer/page-footer","components/page-content/page-content","components/navbar/navbar","components/hero/hero","components/views-view--grid/views-view--grid","components/professional-card/professional-card","components/page/page","components/page-navigation/page-navigation"], function() { return __webpack_require__("./components/page-content/page-content.scss"); })
+/******/ 	__webpack_require__.O(undefined, ["build/css/main.style","components/page-footer/page-footer","components/page-content/page-content","components/navbar/navbar","components/hero/hero","components/views-view--grid/views-view--grid","components/professional-card/professional-card","components/page/page","components/page-navigation/page-navigation"], function() { return __webpack_require__("./components/page-footer/page-footer.scss"); })
+/******/ 	__webpack_require__.O(undefined, ["build/css/main.style","components/page-footer/page-footer","components/page-content/page-content","components/navbar/navbar","components/hero/hero","components/views-view--grid/views-view--grid","components/professional-card/professional-card","components/page/page","components/page-navigation/page-navigation"], function() { return __webpack_require__("./components/page-navigation/page-navigation.scss"); })
+/******/ 	__webpack_require__.O(undefined, ["build/css/main.style","components/page-footer/page-footer","components/page-content/page-content","components/navbar/navbar","components/hero/hero","components/views-view--grid/views-view--grid","components/professional-card/professional-card","components/page/page","components/page-navigation/page-navigation"], function() { return __webpack_require__("./components/page/page.scss"); })
+/******/ 	__webpack_require__.O(undefined, ["build/css/main.style","components/page-footer/page-footer","components/page-content/page-content","components/navbar/navbar","components/hero/hero","components/views-view--grid/views-view--grid","components/professional-card/professional-card","components/page/page","components/page-navigation/page-navigation"], function() { return __webpack_require__("./components/professional-card/professional-card.scss"); })
+/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["build/css/main.style","components/page-footer/page-footer","components/page-content/page-content","components/navbar/navbar","components/hero/hero","components/views-view--grid/views-view--grid","components/professional-card/professional-card","components/page/page","components/page-navigation/page-navigation"], function() { return __webpack_require__("./components/views-view--grid/views-view--grid.scss"); })
 /******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
 /******/ 	
 /******/ })()

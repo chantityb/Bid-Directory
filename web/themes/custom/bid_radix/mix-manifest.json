@@ -5,6 +5,7 @@
     "/components/page-content/page-content.css": "/components/page-content/page-content.css",
     "/components/navbar/navbar.css": "/components/navbar/navbar.css",
     "/components/hero/hero.css": "/components/hero/hero.css",
+    "/components/views-view--grid/views-view--grid.css": "/components/views-view--grid/views-view--grid.css",
     "/components/professional-card/professional-card.css": "/components/professional-card/professional-card.css",
     "/components/page/page.css": "/components/page/page.css",
     "/components/page-navigation/page-navigation.css": "/components/page-navigation/page-navigation.css"

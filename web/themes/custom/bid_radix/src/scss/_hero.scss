@@ -5,6 +5,17 @@ $desktop-height: 1080px;
 $tablet-breakpoint: 768px;
 $desktop-breakpoint: 1024px;
 
+
+// Removes gap between nav and hero image. Used in node.html.twig template.
+.front-page-hero {
+    margin-top: -64px;
+}
+
+// Removes gap between nav and hero image on Professionals view page. Used in views-view--grid.html.twig componant.
+.views-banner {
+    margin-top: -64px;
+}
+
 // Hero Section Styles
 .hero-section-large {
     height: $mobile-height; // Default height for mobile
@@ -16,7 +27,7 @@ $desktop-breakpoint: 1024px;
     justify-content: center;
     text-align: center;
     color: white; // Default text color
-    margin-top: -64px;
+    // margin-top: -64px;
     background-color: blue; // Test background color
 
 
@@ -95,3 +106,4 @@ $desktop-breakpoint: 1024px;
         }
     }
 }
+

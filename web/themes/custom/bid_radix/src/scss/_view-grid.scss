@@ -1,0 +1,44 @@
+// Adds spacing between banner image and grid on Professionals view page. Used in views-view--grid.twig componant.
+.view-grid-container {
+    margin-top: 64px;
+}
+
+// Provides styling for banner on professionals Views Page.
+.banner-container {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    background-size: cover;
+    background-position: center;
+    // background-image: url('public://pictures/prof-bannerC.jpg');
+  
+    .banner-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .view-title {
+        color: #073642;
+        font-family: "REM", sans-serif;
+        font-size: 75px; // Default size for larger screens
+        font-weight: 400;
+
+        // Extra small devices (phones, less than 576px)
+    @media (max-width: 575.98px) {
+        font-size: 60px; // Adjust size for extra small devices
+    }
+    
+        //Small devices (tablets, 576px and up)
+        @media (min-width: 576px) {
+            font-size: 60px; // Adjust size for small devices
+        }
+    
+        // Medium devices (desktops, 768px and up)
+        @media (min-width: 768px) {
+            font-size: 65px; // Adjust size for medium devices
+        }
+    }
+}

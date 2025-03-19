@@ -1,0 +1,72 @@
+{#
+/**
+ * @file
+ * Custom implementation to display views in a grid.
+ *
+ * Available variables:
+ * - attributes: HTML attributes for the wrapping element.
+ * - view_view__grid_utility_classes: Optional additional wrapping classes.
+ * - title: Optional title for this group of rows.
+ * - view: The view object.
+ * - rows: Rendered view results.
+ * - options: The view plugin style options.
+ *   - row_class_default: A flag, if true default row classes should be used.
+ *   - col_class_default: A flag, if true default column classes should be used.
+ *   - alignment: vertical or horizontal ordering of cells.
+ * - items: List of grid items, each item contains rows/columns based on alignment.
+ *   - attributes: HTML attributes for each row or column.
+ *   - content: A list of columns or rows, which contain:
+ *     - attributes: HTML attributes for each row or column.
+ *     - content: The actual contents of each row or column.
+ *
+ * @see template_preprocess_views_view_grid()
+ */
+#}
+
+
+{# 'row' - Use Bootstrap's row class for the grid #}
+{# 'g-4' - Add gutter spacing between cards #}
+{# 'px-3' - Add horizontal padding to the container #}
+{%
+  set classes = [
+    'views-view--grid',
+    'row', 
+    'g-4', 
+    'p-3',
+  ]
+%}
+
+
+{# Banner Section #}
+{% if view.title %}
+  <div class="banner-container" style="background-image: url('{{ file_url('public://pictures/prof-bannerE.jpg') }}');">
+    <div class="banner-content"> 
+      <h2 class="view-title">{{ view.title }}</h2>
+    </div>
+  </div>
+{% endif %}
+
+{# Grid Section #}
+<div class="container view-grid-container"> 
+<div{{ attributes.addClass(classes) }}>
+  {% for item in items %}
+    {% for row in item.content %}
+      <div class="col-lg-4 col-md-6 col-sm-12 mb-4"> {# Column sizes for responsiveness #}
+        {# Include the Professional Card Component #}
+        {% include 'bid_radix:professional-card' with {
+          content: row.content['#row']._entity,
+          label: row.content['#row']._entity.label,
+          url: path('entity.node.canonical', {'node': row.content['#row']._entity.id})
+        } %}
+      </div>
+    {% endfor %}
+  {% endfor %}
+</div>
+</div>
+
+
+
+{# {{ dump(rows) }}  #}
+{# {{ dump(view.title) }}  #}
+{# {{ dump(options) }}  #}
+{# {{ dump(items) }}  #}
