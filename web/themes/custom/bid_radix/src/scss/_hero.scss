@@ -11,11 +11,6 @@ $desktop-breakpoint: 1024px;
     margin-top: -64px;
 }
 
-// Removes gap between nav and hero image on Professionals view page. Used in views-view--grid.html.twig componant.
-.views-banner {
-    margin-top: -64px;
-}
-
 // Hero Section Styles
 .hero-section-large {
     height: $mobile-height; // Default height for mobile

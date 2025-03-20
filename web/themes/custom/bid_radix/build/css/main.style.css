@@ -12693,18 +12693,91 @@ textarea.form-control-lg {
   --bs-tooltip-color: var(--bs-emphasis-color);
 }
 
+/* Filter section styles */
+.views-exposed-form {
+  background-color: #FDF6E3;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.views-exposed-form legend {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.views-exposed-form .bef-checkboxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+}
+.views-exposed-form .bef-checkboxes .form-check {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0;
+}
+.views-exposed-form .bef-checkboxes .form-check .form-check-input {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  border: 2px solid #333;
+  background-color: #ffffff;
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+}
+.views-exposed-form .bef-checkboxes .form-check .form-check-input:checked {
+  background-color: #2AA198;
+  border-color: #2AA198;
+}
+.views-exposed-form .bef-checkboxes .form-check .form-check-input:checked::before {
+  content: "✔";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 14px;
+  color: #ffffff;
+  display: block;
+  z-index: 1;
+}
+.views-exposed-form .bef-checkboxes .form-check .form-check-input:checked::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #2AA198;
+  border-radius: 4px;
+  z-index: 0;
+}
+.views-exposed-form .bef-checkboxes .form-check .form-check-input:hover {
+  border-color: #2AA198;
+}
+.views-exposed-form .bef-checkboxes .form-check .form-check-label {
+  margin-left: 10px;
+}
+
 .view-grid-container {
   margin-top: 64px;
 }
 
-.banner-container {
+.views-banner {
+  margin-top: -64px;
+}
+
+.views-banner-container {
   position: relative;
   width: 100%;
   height: 220px;
   background-size: cover;
   background-position: center;
 }
-.banner-container .banner-content {
+.views-banner-container .banner-content {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -12712,33 +12785,29 @@ textarea.form-control-lg {
           transform: translate(-50%, -50%);
   text-align: center;
 }
-.banner-container .view-title {
+.views-banner-container .view-title {
   color: #073642;
   font-family: "REM", sans-serif;
   font-size: 75px;
   font-weight: 400;
 }
 @media (max-width: 575.98px) {
-  .banner-container .view-title {
+  .views-banner-container .view-title {
     font-size: 60px;
   }
 }
 @media (min-width: 576px) {
-  .banner-container .view-title {
+  .views-banner-container .view-title {
     font-size: 60px;
   }
 }
 @media (min-width: 768px) {
-  .banner-container .view-title {
+  .views-banner-container .view-title {
     font-size: 65px;
   }
 }
 
 .front-page-hero {
-  margin-top: -64px;
-}
-
-.views-banner {
   margin-top: -64px;
 }
 

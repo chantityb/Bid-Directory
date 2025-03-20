@@ -1,44 +1,133 @@
-// Adds spacing between banner image and grid on Professionals view page. Used in views-view--grid.twig componant.
-.view-grid-container {
-    margin-top: 64px;
+/* Filter section styles */
+
+// Variables
+$background-color: #FDF6E3;
+$checkbox-size: 20px;
+$checkbox-border-color: #333;
+$checkbox-checked-color: #2AA198;
+$checkbox-checkmark-color: #ffffff;
+$grid-gap: 10px;
+$grid-column-width: 200px;
+
+// Filter section styles
+.views-exposed-form {
+  background-color: $background-color;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+
+  legend {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+
+  .bef-checkboxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax($grid-column-width, 1fr));
+    gap: $grid-gap;
+
+    .form-check {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0;
+
+      .form-check-input {
+        width: $checkbox-size;
+        height: $checkbox-size;
+        margin-right: 10px;
+        border: 2px solid $checkbox-border-color;
+        background-color: #ffffff;
+        appearance: none;
+        -webkit-appearance: none;
+        border-radius: 4px;
+        cursor: pointer;
+        position: relative; // Ensure the custom checkmark is positioned correctly
+
+        &:checked {
+          background-color: $checkbox-checked-color;
+          border-color: $checkbox-checked-color;
+
+          &::before {
+            content: "✔";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 14px;
+            color: $checkbox-checkmark-color;
+            display: block;
+            z-index: 1; // Ensure the checkmark appears on top
+          }
+
+          &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: $checkbox-checked-color; // Cover the default checkmark
+            border-radius: 4px;
+            z-index: 0; // Ensure the background is behind the checkmark
+          }
+        }
+
+        &:hover {
+          border-color: $checkbox-checked-color;
+        }
+      }
+
+      .form-check-label {
+        margin-left: 10px;
+      }
+    }
+  }
 }
 
-// Provides styling for banner on professionals Views Page.
-.banner-container {
-    position: relative;
-    width: 100%;
-    height: 220px;
-    background-size: cover;
-    background-position: center;
-    // background-image: url('public://pictures/prof-bannerC.jpg');
-  
-    .banner-content {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-    }
+// Adds spacing between banner image and grid on Professionals view page
+.view-grid-container {
+  margin-top: 64px;
+}
 
-    .view-title {
-        color: #073642;
-        font-family: "REM", sans-serif;
-        font-size: 75px; // Default size for larger screens
-        font-weight: 400;
+// Removes gap between nav and hero image on Professionals view page
+.views-banner {
+  margin-top: -64px;
+}
 
-        // Extra small devices (phones, less than 576px)
+// Provides styling for banner on professionals Views Page
+.views-banner-container {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  background-size: cover;
+  background-position: center;
+
+  .banner-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .view-title {
+    color: #073642;
+    font-family: "REM", sans-serif;
+    font-size: 75px; // Default size for larger screens
+    font-weight: 400;
+
+    // Responsive font sizes
     @media (max-width: 575.98px) {
-        font-size: 60px; // Adjust size for extra small devices
+      font-size: 60px; // Extra small devices
     }
-    
-        //Small devices (tablets, 576px and up)
-        @media (min-width: 576px) {
-            font-size: 60px; // Adjust size for small devices
-        }
-    
-        // Medium devices (desktops, 768px and up)
-        @media (min-width: 768px) {
-            font-size: 65px; // Adjust size for medium devices
-        }
+
+    @media (min-width: 576px) {
+      font-size: 60px; // Small devices
     }
+
+    @media (min-width: 768px) {
+      font-size: 65px; // Medium devices
+    }
+  }
 }
