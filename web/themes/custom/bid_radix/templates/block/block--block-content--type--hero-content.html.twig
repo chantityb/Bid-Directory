@@ -21,8 +21,11 @@
     {% endif %}
 
     {# Hero Banner Subtext (Layout Builder) #}
-    {% if content.field_hero_sub_text %}
-        <p class="hero-subtext">{{ content.field_hero_sub_text }}</p>
+    {% if content.field_hero_sub_content %}
+        {# <p class="hero-subtext">{{ content.field_hero_sub_text }}</p> #}
+        {# <p class="hero-subtext">Ready to build something amazing with Drupal? Browse our directory and unlock the full potential of your project</p> #}
+        <p class="hero-sub-content">{{content.field_hero_sub_content['#items'].0.value }}</p>
+
     {% endif %}
 
     {# Hero Banner Button (Layout Builder) #}
@@ -33,15 +36,17 @@
     {% endif %}
 
     {# Render the rest of the content (required when using Layout Builder) #}
-    {{ content|without('field_hero_title', 'field_hero_sub_text', 'field_button_link') }}
+    {{ content|without('field_hero_title', 'field_hero_sub_content', 'field_button_link') }}
 </div>
 
 
 
 {# <div{{ attributes.addClass(classes) }}>
     {{ content.field_hero_title }}
-    {{ content.field_hero_sub_text }}
     {{ content.field_button_link }}
 </div> #}
 
   {# {{ dump(content) }} #}
+
+  {# {{ dump(content.field_hero_sub_content) }} #}
+

@@ -28,7 +28,13 @@
     banner_title: view.title
   } %} #}
   
-
+  {# {% if view.title %}
+    <div class="views-banner-container views-banner" style="background-image: url('{{ banner_image }}');">
+        <div class="banner-content">
+          <h2 class="view-title">{{ banner_title }}</h2>
+        </div>
+      </div>
+    {% endif %} #}
 
 {% include "bid_radix:views-view--grid" %}
 

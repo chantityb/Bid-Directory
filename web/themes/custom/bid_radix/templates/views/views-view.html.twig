@@ -30,4 +30,10 @@
  * @see template_preprocess_views_view()
  */
 #}
+
+{% include "bid_radix:views-banner" with {
+    banner_image: file_url('public://pictures/prof-bannerE.jpg'),
+    banner_title: view.title
+  } %}
+
 {% include "radix:views-view" %}

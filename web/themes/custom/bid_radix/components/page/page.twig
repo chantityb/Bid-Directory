@@ -18,16 +18,26 @@
 
 
   {% block page_content %}
+  {# Include the hero image (added via Layout Builder, class 'hero-section-large') #}
     {% include 'bid_radix:page-content' with {
       page_main_utility_classes: ['py-5'],
       page_header_container_utility_classes: ['mb-3'],
       page_content_container_type: 'false',
     }%}
+
+    {# Include the front-static component #}
+    {% if is_front %}
+      {% include 'bid_radix:front-static' %}
+    {% endif %}
   {% endblock %}
 
-	{% block page_footer %}
-		{% include 'bid_radix:page-footer' %}
-	{% endblock %}
+  {# {% block front_static %}
+    {% include 'bid_radix:front-static' %}
+  {% endblock %} #}
+
+  {% block page_footer %}
+    {% include 'bid_radix:page-footer' %}
+  {% endblock %}
 </div>
 
 

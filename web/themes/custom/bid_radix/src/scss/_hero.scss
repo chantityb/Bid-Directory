@@ -1,6 +1,6 @@
 $mobile-height: 400px;
 $tablet-height: 500px;
-$desktop-height: 1080px;
+$desktop-height: 900px;
 
 $tablet-breakpoint: 768px;
 $desktop-breakpoint: 1024px;
@@ -65,7 +65,7 @@ $desktop-breakpoint: 1024px;
         padding: 1rem; // Add padding for better spacing
 
         .hero-title,
-        .hero-subtext {
+        .hero_sub_content {
             color: #333 !important; // Ensure text is visible in Layout Builder
         }
     }
@@ -77,19 +77,40 @@ $desktop-breakpoint: 1024px;
     z-index: 2; // Ensure content is above the overlay and image
 
     .hero-title {
-        font-size: 2.5rem;
+        font-size: 5.0rem;
         margin-bottom: 1rem;
     }
 
-    .hero-subtext {
-        font-size: 1.2rem;
-        margin-bottom: 1.5rem;
-        margin-top: 1.5rem;
+     .hero-sub-content {
+        font-size: 1.5rem !important;
+        margin-bottom: 1rem !important;
+        margin-top: 1rem !important;
+
+        max-width: 800px; /* Adjust this value as needed */
+        // word-wrap: break-word; /* Breaks long words if necessary */
+        overflow-wrap: break-word; /* Modern alternative to word-wrap */   
+        padding: 10px;
+        margin: 0 auto; /* Center the container */
     }
 
+    // .field--name-field-hero-sub-text {
+    //     font-size: 3.2rem !important;
+    //     margin-bottom: 1.5rem;
+    //     margin-top: 1.5rem;
+
+    //     // Adjust font size for smaller screens
+    //     @media (max-width: $tablet-breakpoint) {
+    //         font-size: 2.5rem !important; // Smaller font size for tablet
+    //     }
+
+    //     @media (max-width: $mobile-breakpoint) {
+    //         font-size: 2rem !important; // Even smaller font size for mobile
+    //     }
+    // }
+
     .btn-primary {
-        font-size: 1rem;
-        padding: 0.75rem 1.5rem;
+        font-size: 1.25rem;
+        padding: 1rem 1.75rem;
         background-color: $primary; // Example button color
         color: white;
         border: none;
@@ -102,3 +123,24 @@ $desktop-breakpoint: 1024px;
     }
 }
 
+/* Media query for small tablets */
+@media (max-width: 900px) {
+  .hero-title {
+    font-size: 3rem !important;
+  }
+
+  .hero-sub-content {
+    font-size: 1rem !important;
+  }
+}
+
+/* Media query for very small mobile devices */
+@media (max-width: 480px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-sub-content {
+    font-size: 0.5rem;
+  }
+}

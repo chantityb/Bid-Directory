@@ -1,0 +1,79 @@
+{#
+/**
+* @file
+* Template for front-static component.
+*/
+#}
+
+{# Full-width section with background color #}
+<div class="front-static">
+<div class="container">
+    <div class="row g-4 g-md-5 py-4"> <!-- Use g-4 for mobile and g-md-5 for larger screens -->
+    <div class="col-lg-4 position-relative">
+      <div class="puzzle-image" style="background-image: url('{{ file_url('public://pictures/greenweb-piece.png') }}');"></div>
+      <div class="puzzle-content position-absolute top-50 start-50 translate-middle text-center">
+        <h2 class="puzzle-title text-white fw-bold">Site Building</h2>
+      </div>
+    </div><!-- /.col-lg-4 -->
+
+    <div class="col-lg-4 position-relative">
+      <div class="puzzle-image" style="background-image: url('{{ file_url('public://pictures/goldweb-piece.png') }}');"></div>
+      <div class="puzzle-content position-absolute top-50 start-50 translate-middle text-center">
+        <h2 class="puzzle-title gold-puzzle text-white fw-bold">Development</h2>
+      </div>
+    </div><!-- /.col-lg-4 -->
+
+    <div class="col-lg-4 position-relative">
+      <div class="puzzle-image" style="background-image: url('{{ file_url('public://pictures/orangeweb-piece.png') }}');"></div>
+      <div class="puzzle-content position-absolute top-50 start-50 translate-middle text-center">
+        <h2 class="puzzle-title orange-puzzle text-white fw-bold">Content Management</h2>
+      </div>
+    </div><!-- /.col-lg-4 -->
+  </div><!-- /.row -->
+  
+  <!-- Add the "And More!" text here -->
+<div class="and-more-text">
+    And More!
+  </div>
+  
+    <!-- START THE FEATURETTES -->
+    <hr class="featurette-divider">
+  
+    <div class="row featurette align-items-center py-5">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Black Drupal Experts:  <span class="text-muted">From Code to Content &amp; Beyond</span></h2>
+        <p class="lead">Welcome to our directory of Black Drupal professionals! We've curated this list to help you connect with skilled developers, content creators, project managers, and tech sales experts who can bring your Drupal projects to life. Explore our comprehensive directory and find the perfect expert for your needs.</p>
+      </div>
+      <div class="col-md-5">
+        <img class="featurette-image img-fluid mx-auto" width="500" height="500" src="{{ file_url('public://pictures/bid-feature2.jpg') }}">
+      </div>
+    </div>
+  
+    <hr class="featurette-divider">
+  
+    <div class="row featurette align-items-center py-5">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Connecting You With Diverse Drupal Expertise<span class="text-muted"></span></h2>
+        <p class="lead">Our mission is to foster connections, promote visibility, and empower our members across all Drupal specializations. Our directory highlights Black professionals with diverse skills and proven track records, from coding to content and from managing projects to driving sales.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img class="featurette-image img-fluid mx-auto" width="500" height="500" src="{{ file_url('public://pictures/bid-feature1.jpg') }}">
+      </div>
+    </div>
+  
+    <hr class="featurette-divider">
+  
+    <div class="row featurette align-items-center py-5">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Enjoyment for Drupal, Community, and Contribution <span class="text-muted"></span></h2>
+        <p class="lead">We love Drupal for its flexibility, power, and the incredible community that surrounds it. We're excited to contribute to this ecosystem by highlighting the contributions of Black professionals across all roles, and fostering a more inclusive space. We believe in the power of open source and the strength of a diverse and multi-faceted community.</p>
+      </div>
+      <div class="col-md-5">
+        <img class="featurette-image img-fluid mx-auto" width="500" height="500" src="{{ file_url('public://pictures/bid-feature5.jpg') }}">
+      </div>
+    </div>
+  
+    {# <hr class="featurette-divider"> #}
+    <!-- /END THE FEATURETTES -->
+  </div><!-- /.container -->
+</div><!-- /.front-static-section -->

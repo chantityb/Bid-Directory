@@ -1,0 +1,103 @@
+@import "../../src/scss/init";
+
+
+@import "../../src/scss/init";
+
+// Variables
+$background-color: #F8F7F8;
+$text-color: #555;
+$overlay-background: rgba(0, 0, 0, 0.5);
+$border-radius: 0.5rem;
+$featurette-heading-font-size: 2.5rem;
+$lead-font-size: 1.25rem;
+$puzzle-image-min-height: 360px; // Default height for desktop
+$spacing-large: 2rem;
+$spacing-medium: 1rem;
+
+// Front static section
+.front-static {
+  background-color: $background-color;
+  padding: $spacing-large 0; // Adds padding to the top and bottom
+  margin-top: -50px;
+
+  // Puzzle image styling
+  .puzzle-image {
+    background-size: contain; // Ensures the entire image fits within the container
+    background-position: center;
+    background-repeat: no-repeat; // Prevents the image from repeating
+    min-height: $puzzle-image-min-height; // Default height for desktop
+    width: 100%; // Ensure the image takes up the full width of the column
+    height: $puzzle-image-min-height;
+
+    // Adjust height for tablet
+    @media (max-width: 991.98px) {
+        height: 250px;
+      }
+  
+      // Adjust height for mobile
+      @media (max-width: 767.98px) {
+        height: 200px;
+      }
+  }
+
+  // Puzzle content styling
+  .puzzle-content {
+    // background: $overlay-background; // Semi-transparent black background for better text readability
+    padding: $spacing-medium;
+    border-radius: $border-radius;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  // Featurette spacing
+  .featurette {
+    margin-bottom: $spacing-large;
+
+    // Featurette heading styling
+    .featurette-heading {
+      font-size: $featurette-heading-font-size;
+      font-weight: bold;
+    }
+
+    // Lead text styling
+    .lead {
+      font-size: $lead-font-size;
+      color: $text-color; // Adjust text color as needed
+    }
+  }
+}
+
+.orange-puzzle {
+  font-size: 28px;
+}
+
+/* Style for the "And More!" text */
+.and-more-text {
+    text-align: center; /* Center the text */
+    font-size: 2.5rem; /* Adjust the font size */
+    font-style: italic;
+    font-weight: bold; /* Make the text bold */
+    color: #333; /* Set the text color */
+    margin-top: -5px;
+    margin-bottom: 35px;  }
+
+// Adjust font size for tablet
+@media (max-width: 1199px) {
+    .puzzle-title {
+        font-size: 28px;
+  }
+
+  .orange-puzzle {
+    font-size: 26px;
+  }
+}
+
+  // Adjust font size for mobile
+  @media (max-width: 767.98px) {
+    .puzzle-title {
+      font-size: 30px;
+    }
+  }
