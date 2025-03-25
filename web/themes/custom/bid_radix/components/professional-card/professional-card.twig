@@ -9,16 +9,16 @@
 <div class="rounded"> {# Adjusted column width #}
 <div class="card h-100 shadow d-flex text-center justify-content-center align-items-center p-3 bg-dark rounded-lg flex-column">
   {# Profile Image #}
-  {% if content.field_image.0 is not empty %}
+  {% if content.user_picture is not empty %}
     <div class="person-img rounded">
       <img
-        src="{{ file_url(content.field_image.0.entity.uri.value) }}"
-        alt="{{ content.field_image.0.alt }}"
+        src="{{ file_url(content.user_picture.entity.uri.value) }}"
+        alt="{{ content.user_picture.alt }}"
         class="rounded-circle img-fluid"
       />
     </div>
   {% else %}
-    <div class="profile-image-wrapper">
+    <div class="person-img rounded">
       <img
         src="{{ file_url('public://pictures/default-image.jpg') }}"
         alt="Default profile image"
@@ -29,7 +29,7 @@
 
   {# Name #}
   <div class="person-name my-2">
-    <h3 class="text-white">{{ label }}</h3>
+    <h3 class="text-white">{{ content.field_full_name.value }}</h3>
   </div>
 
   {# Role Title #}

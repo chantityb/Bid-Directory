@@ -12808,6 +12808,89 @@ textarea.form-control-lg {
   }
 }
 
+/* User Registration Form */
+.user-register-form label {
+  color: #fff;
+}
+
+/* Target the user registration form container */
+.user-register-form.user-form {
+  max-width: 800px;
+  margin: 0 auto; /* Centers the form */
+  padding: 20px;
+}
+
+/* Target user registration text input fields */
+.user-register-form input[type=text],
+.user-register-form input[type=email],
+.user-register-form input[type=password],
+.user-register-form input[type=picture],
+.user-register-form textarea {
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+/* For select dropdowns */
+.user-register-form select {
+  width: 100%;
+  max-width: 600px; /* Match with other inputs */
+  box-sizing: border-box;
+}
+
+#user-register-form input[type=file],
+#user-register-form input[type=url] {
+  max-width: 600px !important; /* Use sparingly */
+  width: 100% !important;
+}
+
+.password-strength {
+  max-width: 600px;
+  width: 100%;
+}
+
+.user-register-form .form-item {
+  margin-bottom: 1rem; /* Space between form items */
+}
+
+/* For responsive design - make inputs full width on mobile */
+@media (max-width: 450px) {
+  .user-register-form input[type=text],
+  .user-register-form input[type=email],
+  .user-register-form input[type=password],
+  .user-register-form input[type=picture],
+  .user-register-form textarea,
+  .user-register-form select {
+    max-width: 100%;
+  }
+  #user-register-form input[type=file],
+  #user-register-form input[type=url] {
+    width: 100% !important;
+  }
+}
+/* User Login Form */
+.user-login-form label {
+  color: #fff;
+}
+
+/* Target the main registration form container */
+.user-login-form {
+  max-width: 800px;
+  margin: 0 auto; /* Centers the form */
+  padding: 20px;
+}
+
+.user-login-form input[type=text],
+.user-login-form input[type=password] {
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+.navbar .nav-link {
+  font-size: 1.2rem;
+}
+
 .front-page-hero {
   margin-top: -64px;
 }
@@ -13358,11 +13441,16 @@ textarea.form-control-lg {
 }
 
 @media (max-width: 1199px) {
-  .puzzle-title {
+  .gold-puzzle {
     font-size: 28px;
   }
+}
+@media (max-width: 992px) {
+  .puzzle-title {
+    font-size: 33px;
+  }
   .orange-puzzle {
-    font-size: 26px;
+    font-size: 36px;
   }
 }
 @media (max-width: 767.98px) {

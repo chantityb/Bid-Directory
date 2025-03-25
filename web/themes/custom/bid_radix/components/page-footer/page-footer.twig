@@ -14,11 +14,13 @@
 {% if page.footer %}
   <footer {{ footer_attributes.addClass(footer_classes) }}>
     <div class="container">
-      <div class="d-flex flex-wrap justify-content-md-between align-items-md-center">
+      <div class="d-flex flex-wrap justify-content-md-between align-items-md-center p-3">
         {% block page_inner_footer %}
           {{ page.footer }}
+          <p>&copy; {{ "now"|date("Y") }} Black in Drupal. All rights reserved.</p>
         {% endblock %}
       </div>
     </div>
+    
   </footer>
 {% endif %}

@@ -47,7 +47,7 @@
         {% include 'bid_radix:professional-card' with {
           content: row.content['#row']._entity,
           label: row.content['#row']._entity.label,
-          url: path('entity.node.canonical', {'node': row.content['#row']._entity.id})
+          url: path('entity.user.canonical', {'user': row.content['#row']._entity.id})
         } %}
       </div>
     {% endfor %}

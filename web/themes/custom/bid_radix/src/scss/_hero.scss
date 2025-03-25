@@ -6,6 +6,10 @@ $tablet-breakpoint: 768px;
 $desktop-breakpoint: 1024px;
 
 
+.navbar .nav-link {
+    font-size: 1.2rem; 
+  }
+
 // Removes gap between nav and hero image. Used in node.html.twig template.
 .front-page-hero {
     margin-top: -64px;
@@ -92,21 +96,6 @@ $desktop-breakpoint: 1024px;
         padding: 10px;
         margin: 0 auto; /* Center the container */
     }
-
-    // .field--name-field-hero-sub-text {
-    //     font-size: 3.2rem !important;
-    //     margin-bottom: 1.5rem;
-    //     margin-top: 1.5rem;
-
-    //     // Adjust font size for smaller screens
-    //     @media (max-width: $tablet-breakpoint) {
-    //         font-size: 2.5rem !important; // Smaller font size for tablet
-    //     }
-
-    //     @media (max-width: $mobile-breakpoint) {
-    //         font-size: 2rem !important; // Even smaller font size for mobile
-    //     }
-    // }
 
     .btn-primary {
         font-size: 1.25rem;

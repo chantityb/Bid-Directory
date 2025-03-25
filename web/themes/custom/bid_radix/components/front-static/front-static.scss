@@ -82,16 +82,23 @@ $spacing-medium: 1rem;
     font-weight: bold; /* Make the text bold */
     color: #839496; /* Set the text color */
     margin-top: -5px;
-    margin-bottom: 35px;  }
+    margin-bottom: 35px;  
+}
+
+@media (max-width: 1199px) {
+  .gold-puzzle {
+    font-size: 28px;
+  }
+}
 
 // Adjust font size for tablet
-@media (max-width: 1199px) {
+@media (max-width: 992px) {
     .puzzle-title {
-        font-size: 28px;
+        font-size: 33px;
   }
 
   .orange-puzzle {
-    font-size: 26px;
+    font-size: 36px;
   }
 }
 
