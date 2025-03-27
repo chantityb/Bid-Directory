@@ -92,7 +92,7 @@ $grid-column-width: 200px;
 
 // Removes gap between nav and hero image on Professionals view page
 .views-banner {
-  margin-top: -64px;
+  margin-top: -16px;
   margin-bottom: 90px;
 }
 
@@ -131,4 +131,11 @@ $grid-column-width: 200px;
       font-size: 65px; // Medium devices
     }
   }
+}
+
+.view-empty {
+    text-align: center;
+    padding-top: 20px;
+    color:$white;
+    font-size: 1.25rem;
 }

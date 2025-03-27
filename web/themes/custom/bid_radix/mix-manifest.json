@@ -1,12 +1,15 @@
 {
     "/build/js/main.script.js": "/build/js/main.script.js",
+    "/components/views-banner/views-banner.js": "/components/views-banner/views-banner.js",
     "/build/css/main.style.css": "/build/css/main.style.css",
-    "/components/page-footer/page-footer.css": "/components/page-footer/page-footer.css",
     "/components/page-content/page-content.css": "/components/page-content/page-content.css",
     "/components/navbar/navbar.css": "/components/navbar/navbar.css",
     "/components/hero/hero.css": "/components/hero/hero.css",
+    "/components/front-static/front-static.css": "/components/front-static/front-static.css",
     "/components/views-view--grid/views-view--grid.css": "/components/views-view--grid/views-view--grid.css",
+    "/components/views-banner/views-banner.css": "/components/views-banner/views-banner.css",
     "/components/professional-card/professional-card.css": "/components/professional-card/professional-card.css",
     "/components/page/page.css": "/components/page/page.css",
-    "/components/page-navigation/page-navigation.css": "/components/page-navigation/page-navigation.css"
+    "/components/page-navigation/page-navigation.css": "/components/page-navigation/page-navigation.css",
+    "/components/page-footer/page-footer.css": "/components/page-footer/page-footer.css"
 }

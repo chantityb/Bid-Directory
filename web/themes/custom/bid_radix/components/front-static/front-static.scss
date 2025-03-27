@@ -102,6 +102,16 @@ $spacing-medium: 1rem;
   }
 }
 
+@media (max-width: 991px) {
+    .puzzle-pieces {
+        margin-right: 25px;
+    }
+
+    .and-more-text {
+        margin-right: 25px;
+    }
+}
+
   // Adjust font size for mobile
   @media (max-width: 767.98px) {
     .puzzle-title {

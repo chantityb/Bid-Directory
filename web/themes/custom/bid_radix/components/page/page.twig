@@ -19,8 +19,8 @@
 
   {% block page_content %}
   {# Include the hero image (added via Layout Builder, class 'hero-section-large') #}
+  {# Removed styling for page_main_utility_classes: py-5 #}
     {% include 'bid_radix:page-content' with {
-      page_main_utility_classes: ['py-5'],
       page_header_container_utility_classes: ['mb-3'],
       page_content_container_type: 'false',
     }%}

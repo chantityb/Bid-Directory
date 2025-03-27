@@ -12620,6 +12620,10 @@ textarea.form-control-lg {
   opacity: 0.7;
 }
 
+.professional-details {
+  padding-top: 35px;
+}
+
 .btn-primary {
   background-color: #b58900;
 }
@@ -12767,7 +12771,7 @@ textarea.form-control-lg {
 }
 
 .views-banner {
-  margin-top: -64px;
+  margin-top: -16px;
   margin-bottom: 90px;
 }
 
@@ -12806,6 +12810,13 @@ textarea.form-control-lg {
   .views-banner-container .view-title {
     font-size: 65px;
   }
+}
+
+.view-empty {
+  text-align: center;
+  padding-top: 20px;
+  color: #fff;
+  font-size: 1.25rem;
 }
 
 /* User Registration Form */
@@ -12892,7 +12903,7 @@ textarea.form-control-lg {
 }
 
 .front-page-hero {
-  margin-top: -64px;
+  margin-top: -16px;
 }
 
 .hero-section-large {
@@ -12927,6 +12938,14 @@ textarea.form-control-lg {
   left: 0;
   z-index: 0;
 }
+.hero-section-large .layout-builder-block {
+  color: #333;
+  padding: 1rem;
+}
+.hero-section-large .layout-builder-block .hero-title,
+.hero-section-large .layout-builder-block .hero_sub_content {
+  color: #333 !important;
+}
 @media (min-width: 768px) {
   .hero-section-large {
     height: 500px;
@@ -12937,14 +12956,6 @@ textarea.form-control-lg {
     height: 900px;
   }
 }
-.hero-section-large .layout-builder-block {
-  color: #333;
-  padding: 1rem;
-}
-.hero-section-large .layout-builder-block .hero-title,
-.hero-section-large .layout-builder-block .hero_sub_content {
-  color: #333 !important;
-}
 
 .hero-content {
   position: relative;
@@ -12954,14 +12965,32 @@ textarea.form-control-lg {
   font-size: 5rem;
   margin-bottom: 1rem;
 }
+@media (max-width: 900px) {
+  .hero-content .hero-title {
+    font-size: 3rem !important;
+  }
+}
+@media (max-width: 480px) {
+  .hero-content .hero-title {
+    font-size: 2rem;
+  }
+}
 .hero-content .hero-sub-content {
   font-size: 1.5rem !important;
-  margin-bottom: 1rem !important;
-  margin-top: 1rem !important;
-  max-width: 800px; /* Adjust this value as needed */
-  overflow-wrap: break-word; /* Modern alternative to word-wrap */
+  margin: 1rem auto !important;
+  max-width: 800px;
+  overflow-wrap: break-word;
   padding: 10px;
-  margin: 0 auto; /* Center the container */
+}
+@media (max-width: 900px) {
+  .hero-content .hero-sub-content {
+    font-size: 1rem !important;
+  }
+}
+@media (max-width: 480px) {
+  .hero-content .hero-sub-content {
+    font-size: 0.5rem;
+  }
 }
 .hero-content .btn-primary {
   font-size: 1.25rem;
@@ -12976,22 +13005,27 @@ textarea.form-control-lg {
   background-color: rgb(130, 98.3977900552, 0);
 }
 
-/* Media query for small tablets */
-@media (max-width: 900px) {
-  .hero-title {
-    font-size: 3rem !important;
-  }
-  .hero-sub-content {
-    font-size: 1rem !important;
-  }
+.bid-copyright {
+  font-size: 1.2rem;
+  margin-top: 15px;
 }
-/* Media query for very small mobile devices */
-@media (max-width: 480px) {
-  .hero-title {
-    font-size: 2rem;
-  }
-  .hero-sub-content {
-    font-size: 0.5rem;
+
+.alert-success {
+  z-index: 99999;
+}
+
+.nav.nav-tabs.mb-3 {
+  margin-bottom: -20px !important;
+}
+
+/* Targets the Contact link specifically */
+a.nav-link[data-drupal-link-system-path=contact] {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 767px) {
+  .bid-copyright {
+    margin-top: 8px !important;
   }
 }
 /**
@@ -13451,6 +13485,14 @@ textarea.form-control-lg {
   }
   .orange-puzzle {
     font-size: 36px;
+  }
+}
+@media (max-width: 991px) {
+  .puzzle-pieces {
+    margin-right: 25px;
+  }
+  .and-more-text {
+    margin-right: 25px;
   }
 }
 @media (max-width: 767.98px) {

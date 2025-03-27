@@ -48,10 +48,10 @@
                     </div>
                 {% endif %}
                 
-                {% if content.field_portfolio['#items'] is not empty %}
+                {% if content.field_portfolio_link['#items'] is not empty %}
                 <div class="mb-3">
                     {# <h3 class="h5">Portfolio</h3> #}
-                    <a href="{{ content.field_portfolio['#items'].0.url }}" class="btn btn-outline-primary w-100">
+                    <a href="{{ content.field_portfolio_link['#items'].0.url }}" class="btn btn-outline-primary w-100">
                     View Portfolio
                     </a>
                 </div>
@@ -107,3 +107,5 @@
         </div>
     </div>
 </div>
+
+{# {{ dump(content) }} #}
